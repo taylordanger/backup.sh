@@ -20,14 +20,14 @@ targetDirectory= $1
 destinationDirectory= $2
 
 # [TASK 2]
-echo ""
+echo "backup.sh target_directory_name destination_directory_name"
 echo "Invalid directory path provided'
 
 # [TASK 3]
-currentTS=``
+currentTS= $(date +%s)
 
 # [TASK 4]
-backupFileName=""
+backupFileName="backup-$(date +%s).tar.gz"
 
 # We're going to:
   # 1: Go into the target directory
@@ -37,11 +37,11 @@ backupFileName=""
 # To make things easier, we will define some useful variables...
 
 # [TASK 5]
-origAbsPath=``
+origAbsPath=`/home/darkstar/backup.sh`
 
 # [TASK 6]
-cd # <-
-destDirAbsPath=``
+cd # <-/home/darkstar
+destDirAbsPath=`/home/darkstar/backup.sh`
 
 # [TASK 7]
 cd # <-
